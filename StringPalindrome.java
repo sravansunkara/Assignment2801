@@ -1,0 +1,24 @@
+public class StringPalindrome {
+    public static void main(String[] args) {
+
+        String str = "malayalam", reverseStr = "";
+
+        int strLength = str.length();
+        if(strLength>1){
+            for (int i = (strLength - 1); i >=0; --i) {
+                reverseStr = reverseStr + str.charAt(i);
+            }
+        }
+        else {
+            System.out.println("Enter words not letters");
+        }
+
+
+        if (str.toLowerCase().equals(reverseStr.toLowerCase())) {
+            System.out.println(str + " is a Palindrome String.");
+        }
+        else {
+            System.out.println(str + " is not a Palindrome String.");
+        }
+    }
+}
